@@ -11,3 +11,5 @@ class PresentationAdmin(admin.ModelAdmin):
 @admin.register(Status)
 class StatusAdmin(admin.ModelAdmin):
     pass
+
+

@@ -26,6 +26,12 @@ services:
       - rabbitmq
     volumes:
       - ./presentation_workflow:/app
+  attendees_account_info:
+    build:
+      context: ./attendees_microservice
+      dockerfile: ./Dockerfile.account_info.dev
+    volumes:
+      - ./attendees_microservice:/app
   rabbitmq:
     image: rabbitmq:3
   mail:
